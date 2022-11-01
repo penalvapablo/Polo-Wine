@@ -1,0 +1,147 @@
+@import 'colors';
+
+.header{
+  height: 100vh;
+  max-width: 2048px;
+  left: 50%;
+  margin-left: -1024px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.overlay{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.3) 100%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  width: 2048px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg_image_container{
+  position: absolute;
+  width: 2048px;
+  margin-left: -20px;
+  height: 100vh;
+
+  z-index: 10;
+}
+.bg_image{
+  position: absolute;
+  top: -100px;
+  // left: -30px;
+  z-index: 1;
+  
+}
+
+.languageBtns{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  z-index: 1001;
+  & p{
+    font-size: 20px;
+    color: $yellow;
+  }
+}
+.languageBtn{
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: $yellow;
+
+}
+.burgerBtn{
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background-color: transparent;
+  border: none;
+  z-index: 1001;
+}
+.burger{
+  height: 30px;
+  color: $yellow;
+}
+
+.logoContainer{
+  z-index: 1001;
+  position: absolute;
+  width: 340px;
+  height: 200px;
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.textContainer{
+  // z-index: 20;
+  width: 350px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 100;
+}
+.text{
+  font-size: 18px;
+  color: $yellow;
+  & span{
+    font-weight: 800;
+  }
+}
+
+.btn{
+  background-color: $obispo;
+  color: $yellow;
+  border: 2px solid $yellow;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 7px;
+  position: absolute;
+  left: 50%;
+  margin-left: -143.5px;
+  bottom: 15%;
+  z-index: 100;
+}
+.btnEn{
+  background-color: $obispo;
+  color: $yellow;
+  border: 2px solid $yellow;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 7px;
+  position: absolute;
+  left: 50%;
+  margin-left: -103.475px;
+  bottom: 15%;
+  z-index: 100;
+
+}
+
+
+@media screen and (min-width: 400px){
+.bg_image_container{
+  margin-left: 0;
+}
+}

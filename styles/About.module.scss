@@ -1,0 +1,31 @@
+@import 'colors';
+
+
+.about{
+  background-color: $white;
+}
+
+.burgerBtn{
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background-color: transparent;
+  border: none;
+  z-index: 1001;
+}
+.burger{
+  height: 30px;
+  color: $yellow;
+}
+
+.title{
+  font-family: TangoSans, sanserif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  color: $obispoTexto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}

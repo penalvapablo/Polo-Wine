@@ -1,0 +1,23 @@
+@import 'colors';
+
+.presentacion{
+ background-color: $white; 
+}
+.title{
+  font-family: TangoSans, sanserif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  color: $obispoTexto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.text{
+  font-size: 18px;
+  color: $obispoTexto;
+  & span{
+    font-weight: 800;
+  }
+}
