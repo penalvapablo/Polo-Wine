@@ -1,0 +1,50 @@
+@import '/styles/colors';
+
+.nav{
+  display: none;
+}
+
+.logo{
+  width: auto;
+  height: 100%;
+}
+
+.navLinks{
+  width: 400px;
+  & ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    & li a{
+      font-size: 20px;
+      padding: 5px;
+      border-radius: 10px;
+      color: $yellow;
+      text-decoration: none;
+      &:hover{
+        background-color: $obispo;
+      }
+      
+    }
+  }
+}
+.active{
+  background-color: $obispo;
+}
+
+@media screen and (min-width: 1000px){
+  .nav{
+    position: fixed;
+    top:0;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+}

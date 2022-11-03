@@ -1,4 +1,4 @@
-import styles from '../styles/Pilares.module.scss'
+import styles from './Pilares.module.scss'
 
 const Pilares = ({ languages }) => {
   return (

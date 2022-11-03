@@ -1,4 +1,4 @@
-@import 'colors';
+@import '/styles/colors';
 
 .contacto{
   background-color: $darkGray;
@@ -54,6 +54,7 @@
     &:hover{
       color: rgb(180, 76, 177);
     }
+
   }
 }
 

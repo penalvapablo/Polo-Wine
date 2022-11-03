@@ -1,4 +1,4 @@
-@import 'colors';
+@import '/styles/colors';
 
 .confiar{
   background-color: $white;
@@ -37,7 +37,8 @@
 .itemTitle{
   font-weight: 800;
   font-size: 22px;
-  width: 100%;
+  width: 300px;
+  margin: 0 auto;
   margin-bottom: -10px;
   text-align: center;
   color: $obispoTexto;
@@ -46,7 +47,38 @@
 .itemText{
   text-align: center;
   font-size: 18px;
-  width: 90%;
+  width: 300px;
   margin: 0 auto;
   color: $obispoTexto;
+}
+
+
+@media screen and (min-width: 800px){
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 650px;
+    margin: 0 auto;
+  }
+
+}
+@media screen and (min-width: 1000px){
+  .confiar{
+    padding-bottom: 50px;
+  }
+  .title{
+    font-size: 45px;
+    width: auto;
+    padding: 50px 0 70px ;
+  }
+
+}
+
+@media screen and (min-width: 1400px){
+  .container{
+    width: 90%;
+    max-width: 1400px;
+  }
+
 }

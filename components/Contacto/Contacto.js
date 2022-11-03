@@ -1,6 +1,6 @@
 import Image from "next/image"
-import styles from '../styles/Contacto.module.scss'
-import logo from '../public/logo-polo-and-wine.png'
+import styles from './Contacto.module.scss'
+import logo from '/public/logo-polo-and-wine.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp, faInstagram, faFacebookF } from '@fortawesome/free-brands-svg-icons'
 

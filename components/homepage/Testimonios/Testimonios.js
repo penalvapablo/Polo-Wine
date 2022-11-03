@@ -1,7 +1,7 @@
-import styles from '../styles/Testimonios.module.scss'
-import img1 from '../public/testimonios-1.png'
-import img2 from '../public/testimonios-2.png'
-import img3 from '../public/testimonios-3.png'
+import styles from './Testimonios.module.scss'
+import img1 from '/public/testimonios-1.png'
+import img2 from '/public/testimonios-2.png'
+import img3 from '/public/testimonios-3.png'
 import Image from 'next/image'
 
 const Testimonios = ({ languages }) => {

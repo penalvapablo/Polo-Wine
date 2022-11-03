@@ -1,7 +1,7 @@
-import styles from '../styles/MobileNav.module.scss'
+import styles from './MobileNav.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../public/logo-polo-and-wine.png'
+import logo from '/public/logo-polo-and-wine.png'
 
 
 const MobileNav = ({ parent, mobileNavState, mobileNavFn, language }) => {
@@ -17,13 +17,13 @@ const MobileNav = ({ parent, mobileNavState, mobileNavFn, language }) => {
             <li><Link href='/' >Home</Link></li>
             <li><Link href='/events' >Eventos</Link></li>
             <li><Link href='/about' >Quien soy</Link></li>
-            <li><Link href={'#Contact'} >Contacto</Link></li>
+            <li><Link href={'#Contact'} onClick={mobileNavFn} >Contacto</Link></li>
           </>}
           {language === 'en' && <>
             <li><Link href='/' >Home</Link></li>
             <li><Link href='/events' >Events</Link></li>
             <li><Link href='/about' >About</Link></li>
-            <li><Link href={'/#Contact'} onClick={mobileNavFn}>Contact</Link></li>
+            <li><Link href={'#Contact'} onClick={mobileNavFn}>Contact</Link></li>
           </>}
 
         </ul>

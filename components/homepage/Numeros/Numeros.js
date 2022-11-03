@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFaceSmileBeam } from '@fortawesome/free-regular-svg-icons'
 import { faArrowUpRightDots, faSoccerBall, faTruckPlane, faHandshake } from '@fortawesome/free-solid-svg-icons'
 
-import styles from '../styles/Numeros.module.scss'
+import styles from './Numeros.module.scss'
 
 const Numeros = ({ languages }) => {
   return (

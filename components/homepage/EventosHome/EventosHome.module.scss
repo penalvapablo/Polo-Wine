@@ -1,8 +1,11 @@
-@import 'colors';
+@import '/styles/colors';
 
 .eventosHome{
   background-color: $white;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title{
@@ -20,6 +23,7 @@
 .text{
   font-size: 20px;
   width: 90%;
+  max-width: 700px;
   margin: 0 auto;
   color: $obispoTexto;
   & span{
@@ -50,17 +54,23 @@
   text-align: center;
   font-size: 18px;
   width: 90%;
+  max-width: 350px;
   margin: 0 auto;
   color: $obispoTexto;
 }
 .img{
   position: relative;
-  max-width: 650px;
   max-width: 350px;
   height: auto;
 }
 
 .btn{
+  background-color: transparent;
+  width: 100%;
+  border: none;
+}
+
+.link{
   background-color: $obispo;
   color: $yellow;
   border: 2px solid $yellow;
@@ -68,9 +78,40 @@
   font-size: 20px;
   font-weight: 700;
   padding: 7px;
-  position: relative;
-  left: 50%;
-  margin-left: -82.92px;
-  bottom: 15px;
-  z-index: 100;
+  text-decoration: none;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 500px){
+  .title{
+    width: 400px
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .title{
+    width: 600px;
+    font-size: 45px;
+  }
+  .eventsDescription{
+    font-size: 16px ;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .title{
+    width: auto;
+  }
+  .eventosHome{
+    padding: 30px 0 50px;
+  }
+
+  .events{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
 }

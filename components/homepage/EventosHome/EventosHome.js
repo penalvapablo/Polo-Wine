@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import { useState } from 'react'
-import img1 from '../public/music-polo-and-wine.png'
-import img2 from '../public/football-polo-and-wine.png'
-import img3 from '../public/travel-polo-and-wine.png'
-import styles from '../styles/EventosHome.module.scss'
+import img1 from '/public/music-polo-and-wine.png'
+import img2 from '/public/football-polo-and-wine.png'
+import img3 from '/public/travel-polo-and-wine.png'
+import styles from './EventosHome.module.scss'
+import Link from 'next/link'
 
 const EventosHome = ({ language }) => {
   return (
@@ -29,9 +30,7 @@ const EventosHome = ({ language }) => {
           <p className={styles.eventsDescription}>No te quedes afuera de tus eventos favoritos y reserva con nosotros los mejores servicios de traslado individuales o grupales para todos tus shows.</p>
         </div>
       </div>
-      <button className={styles.btn}>
-        <a>Cómo Reservar</a>
-      </button>
+      <Link href='#ComoTrabajamos' className={styles.link}>Cómo Reservar</Link>
     </section>
   )
 }

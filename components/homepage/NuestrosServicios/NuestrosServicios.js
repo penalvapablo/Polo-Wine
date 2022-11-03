@@ -1,18 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import styles from '../styles/NuestrosServicios.module.scss'
+import styles from './NuestrosServicios.module.scss'
 import { faSoccerBall } from '@fortawesome/free-solid-svg-icons'
 import { faHorse } from '@fortawesome/free-solid-svg-icons'
 import { faWineGlass } from '@fortawesome/free-solid-svg-icons'
 import { faHotel } from '@fortawesome/free-solid-svg-icons'
 import { faVanShuttle } from '@fortawesome/free-solid-svg-icons'
 import { faComments } from '@fortawesome/free-regular-svg-icons'
+import Link from 'next/link'
 
 const NuestrosServicios = () => {
   return (
     <section className={styles.nuestrosServicios}>
 
-      <h2 className={styles.title}>Nuestros Serivicos</h2>
+      <h2 className={styles.title}>Nuestros Servicios</h2>
       <div className={styles.serviceContainer}>
         <div className={styles.service}>
           <FontAwesomeIcon icon={faSoccerBall} className={styles.icon} />
@@ -39,6 +40,8 @@ const NuestrosServicios = () => {
           <p className={styles.text}>Asistencia bilingue durante todo tu viaje</p>
         </div>
       </div>
+
+      <Link href='/events' className={styles.link}>Reservar mi próximo evento</Link>
 
     </section>
   )

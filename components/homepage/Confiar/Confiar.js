@@ -1,4 +1,4 @@
-import styles from '../styles/Confiar.module.scss'
+import styles from './Confiar.module.scss'
 import { faTruckPlane, faArrowUpRightDots, faAddressBook, faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
