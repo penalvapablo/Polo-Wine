@@ -1,0 +1,45 @@
+@import 'colors';
+
+.section{
+  background-color: $darkGray;
+}
+
+.title{
+  font-family: TangoSans, sanserif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  color: $yellow;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container{
+  margin-top: 20px;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.itemTitle{
+  font-weight: 800;
+  font-size: 22px;
+  width: 100%;
+  margin-bottom: -10px;
+  text-align: center;
+  color: $yellow;
+}
+
+.itemText{
+  text-align: center;
+  font-size: 18px;
+  width: 80%;
+  margin: 0 auto;
+  color: $yellow;
+}

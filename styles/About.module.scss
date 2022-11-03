@@ -4,7 +4,24 @@
 .about{
   background-color: $white;
 }
+.languageBtns{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  z-index: 1001;
+  & p{
+    font-size: 20px;
+    color: $yellow;
+  }
+}
+.languageBtn{
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: $yellow;
 
+}
 .burgerBtn{
   position: absolute;
   top: 20px;

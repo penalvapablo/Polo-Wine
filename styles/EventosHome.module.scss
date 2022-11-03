@@ -1,0 +1,77 @@
+@import 'colors';
+
+.eventosHome{
+  background-color: $white;
+  padding-bottom: 30px;
+}
+
+.title{
+  font-family: TangoSans, sanserif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  color: $obispoTexto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.text{
+  font-size: 20px;
+  width: 90%;
+  margin: 0 auto;
+  color: $obispoTexto;
+  & span{
+    font-weight: 800;
+  }
+}
+.events{
+  padding: 20px 0;
+}
+.eventsBox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+} 
+.eventsTitle{
+  font-weight: 800;
+  font-size: 22px;
+  width: 340px;
+  margin-bottom: -10px;
+  text-align: center;
+  color: $obispoTexto;
+
+}
+.eventsDescription{
+  text-align: center;
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+  color: $obispoTexto;
+}
+.img{
+  position: relative;
+  max-width: 650px;
+  max-width: 350px;
+  height: auto;
+}
+
+.btn{
+  background-color: $obispo;
+  color: $yellow;
+  border: 2px solid $yellow;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 7px;
+  position: relative;
+  left: 50%;
+  margin-left: -82.92px;
+
+  bottom: 15px;
+  z-index: 100;
+}

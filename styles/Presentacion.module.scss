@@ -1,9 +1,14 @@
 @import 'colors';
 
-.presentacion{
- background-color: $white; 
+.mobileDiv1{
+  background-color: $white; 
+  padding-bottom: 60px;
 }
-.title{
+.mobileDiv2{
+  background-color: $darkGray; 
+  padding-bottom: 30px;
+}
+.title1{
   font-family: TangoSans, sanserif;
   font-weight: 700;
   font-size: 30px;
@@ -14,10 +19,28 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.title2{
+  color: $yellow
+}
 .text{
   font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
   color: $obispoTexto;
   & span{
     font-weight: 800;
   }
 }
+.text2{
+  color: $yellow;
+}
+
+.img{
+  position: relative;
+  top: 30px;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  max-width: 650px;
+  height: auto;
+} 

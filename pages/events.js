@@ -4,10 +4,13 @@ import { useState } from 'react'
 import styles from '../styles/About.module.scss'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import MobileNav from '../components/MobileNav'
+import { useContext } from "react";
+import AppContext from '../components/AppContext'
 
 const Events = () => {
-  const [mobileNav, setMobileNav] = useState(false)
+  let { language, languageFnEs, languageFnEn } = useContext(AppContext)
 
+  const [mobileNav, setMobileNav] = useState(false)
   const mobileNavFn = () => {
     setMobileNav(!mobileNav)
   }
@@ -23,8 +26,13 @@ const Events = () => {
         <link rel="icon" href="../" />
       </Head>
 
+      <div className={styles.languageBtns}>
+        <button className={styles.languageBtn} onClick={languageFnEs}>ES</button>
+        <p>/</p>
+        <button className={styles.languageBtn} onClick={languageFnEn}>EN</button>
+      </div>
       <div className={`${styles.mobileNav__container}`}>
-        <MobileNav parent='about' mobileNavFn={mobileNavFn} mobileNavState={mobileNav} />
+        <MobileNav parent='events' mobileNavFn={mobileNavFn} mobileNavState={mobileNav} language={language} />
       </div>
 
       <button className={styles.burgerBtn} onClick={mobileNavFn}>

@@ -114,6 +114,7 @@ section {
 body {
   font-family: 'Roboto', sans-serif;
 }
+
 @font-face {
   font-family: "TangoSans";
   src: url('../fonts/TangoSans.ttf');
@@ -126,14 +127,15 @@ h2,
 h3 {
   letter-spacing: .6px;
 }
-h1{
-  font-family:"TangoSans", sans-serif;
-  font-weight:500; 
+
+h1 {
+  font-family: "TangoSans", sans-serif;
+  font-weight: 500;
 }
 
 p {
 
-  line-height: 24px;
+  line-height: 26px;
 }
 
 ol,

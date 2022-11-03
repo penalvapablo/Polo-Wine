@@ -1,24 +1,16 @@
 import React, { useState } from 'react'
 import styles from '../styles/Hero.module.scss'
 import Image from 'next/image'
-import bgMobile from '../public/polo-and-wine-bg-desktop.JPG'
+import bg from '../public/polo-and-wine-bg-desktop.JPG'
 import logo from '../public/logo-polo-and-wine.png'
 import MobileNav from './MobileNav'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
-const Hero = () => {
-  const [language, setLanguage] = useState('es')
+const Hero = ({ languageObj }) => {
   const [mobileNav, setMobileNav] = useState(false)
-
-  const languageFnEs = () => {
-    setLanguage('es')
-  }
-
-  const languageFnEn = () => {
-    setLanguage('en')
-  }
+  let { language, languageFnEs, languageFnEn } = languageObj;
   const mobileNavFn = () => {
     setMobileNav(!mobileNav)
   }
@@ -30,12 +22,12 @@ const Hero = () => {
     <header id='Home' className={styles.header} >
 
       <div className={`${styles.mobileNav__container}`}>
-        <MobileNav mobileNavFn={mobileNavFn} mobileNavState={mobileNav} parent='home' />
+        <MobileNav mobileNavState={mobileNav} mobileNavFn={mobileNavFn} parent='home' language={language} />
       </div>
       <div className={styles.overlay}></div>
       {/* BACKGROUND IMAGES */}
       <div className={styles.bg_image_container}>
-        <Image src={bgMobile} alt='Image Polo & Wine' layout='fill' quality={100} className={styles.bg_image} />
+        <Image src={bg} alt='Image-Polo-&-Wine' layout='fill' priority quality={100} className={styles.bg_image} />
       </div>
       {/* <Image src={bgMobile} alt='Logo Polo & Wine' layout='fill' objectFit='cover' quality={100} className={styles.bg_image_desktop_container} /> */}
       {/* BACKGROUND IMAGES */}
@@ -50,7 +42,7 @@ const Hero = () => {
         <FontAwesomeIcon icon={faBars} className={styles.burger} />
       </button>
       <div className={styles.logoContainer}>
-        <Image src={logo} alt='logo-polo-&-wine' priority fill sizes="" />
+        <Image src={logo} alt='logo-polo-&-wine' priority fill sizes="300w" />
       </div>
       {language === 'es' && <>
         <div className={styles.textContainer}>

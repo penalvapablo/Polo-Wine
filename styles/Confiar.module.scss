@@ -1,0 +1,52 @@
+@import 'colors';
+
+.confiar{
+  background-color: $white;
+}
+
+
+.title{
+  font-family: TangoSans, sanserif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  color: $obispoTexto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.container{
+  margin-top: 20px;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.itemIcon{
+  font-size: 80px;
+  color: $darkGray;
+}
+
+.itemTitle{
+  font-weight: 800;
+  font-size: 22px;
+  width: 100%;
+  margin-bottom: -10px;
+  text-align: center;
+  color: $obispoTexto;
+}
+
+.itemText{
+  text-align: center;
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+  color: $obispoTexto;
+}

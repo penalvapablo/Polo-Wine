@@ -1,0 +1,56 @@
+@import 'colors';
+
+.section{
+  background-color: $white;
+  padding-bottom: 30px;
+}
+
+.title{
+  font-family: TangoSans, sanserif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  color: $obispoTexto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card{
+  width: 70%;
+  max-width: 280px;
+  margin: 30px auto 0;
+  padding: 20px;
+  background-color: $darkGray;
+  border-radius:10px ;
+}
+
+.cardText{
+  font-size: 18px;
+  color: $yellow;
+  width: 90%;
+
+  margin: 0 auto 20px;
+}
+
+.cardBottom{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardImg{}
+
+.cardName{
+  font-size: 20px;
+  font-weight: 600;
+  color: $yellow;
+}
