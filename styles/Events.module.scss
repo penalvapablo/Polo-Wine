@@ -1,0 +1,117 @@
+@import 'colors';
+
+.container{
+  background-color: $white;
+  padding-top: 90px;
+}
+
+.languageBtns{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  z-index: 1001;
+  & p{
+    font-size: 20px;
+    color: $yellow;
+  }
+}
+.languageBtn{
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: $yellow;
+
+}
+.burgerBtn{
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background-color: transparent;
+  border: none;
+  z-index: 1001;
+}
+.burger{
+  height: 30px;
+  color: $yellow;
+}
+
+.separador{
+  height: 10px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: $yellow;
+}
+
+.event{
+  margin-bottom: 30px;
+}
+
+
+.eventTitle{
+  font-family: TangoSans, sanserif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  color: $obispoTexto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.eventText{
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+  color: $obispoTexto;
+  & span{
+    font-weight: 800;
+  }
+}
+
+.cardsContainer{
+
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  border: 5px solid $obispoTexto;
+  border-radius: 10px;
+  width: 85%;
+  max-width: 700px;
+  margin: 30px auto 0;
+  padding: 10px;
+  align-items: center;
+}
+
+.cardTitle{
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0 20px;
+  color: $obispoTexto;
+}
+
+.cardText{
+  font-size: 18px;
+  color: $obispoTexto;
+  & span{
+    font-weight: 800;
+  }
+}
+
+.cardBtn{
+  background-color: $obispo;
+  color: $yellow;
+  border: 2px solid $yellow;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 7px;
+  margin: 20px auto;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
