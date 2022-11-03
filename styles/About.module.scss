@@ -3,6 +3,7 @@
 
 .about{
   background-color: $white;
+
 }
 .languageBtns{
   position: absolute;
@@ -45,4 +46,82 @@
   color: $obispoTexto;
   padding-top: 80px;
   padding-bottom: 30px;
+}
+
+.text{
+  font-size: 20px;
+  width: 90%;
+  margin: 0 auto;
+  color: $obispoTexto;
+  & span{
+    font-weight: 800;
+  }
+}
+
+.sole{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.soleImg{
+  position: relative;
+  max-width: 650px;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.soleTitle{
+  font-family: TangoSans, sanserif;
+  font-weight: 700;
+  font-size: 30px;
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  color: $obispoTexto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.soleText{
+  font-size: 20px;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto 30px;
+  color: $obispoTexto;
+}
+
+.soleBtn{
+  background-color: $obispo;
+  color: $yellow;
+  border: 2px solid $yellow;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 7px;
+  position: relative;
+  left: 50%;
+  margin-left: -60.12px;
+  bottom: 15px;
+  z-index: 100;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.soleLinks{
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto 40px;
+  font-size: 50px;
+  & a {
+    color: $obispoTexto;
+    transition: all .3s;
+    &:hover{
+      color: $yellow;
+    }
+  }
 }
