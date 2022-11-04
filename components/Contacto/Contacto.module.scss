@@ -7,11 +7,19 @@
   align-items: center;
   padding-top: 40px;
 }
-
-.img{
-  max-width: 650px;
-  max-width: 350px;
+.container1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: auto;
+  
+}
+.img{
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 50px;
 }
 
 .title{  
@@ -19,7 +27,7 @@
   font-weight: 700;
   font-size: 30px;
   width: 340px;
-  margin: 0 auto;
+
   text-align: center;
   color: $yellow;
   padding-top: 30px;
@@ -40,13 +48,14 @@
   font-size: 18px;
   color: $yellow;
   padding-bottom: 30px;
+  text-align: center;
 }
 
 .SocialLinksBox{
   width: 180px;
   display: flex;
   justify-content: space-between;
-  margin: 20px auto 0;
+  margin: 0 auto 0;
   font-size: 50px;
   & a {
     color: $yellow;
@@ -69,5 +78,20 @@
   color: $yellow;
   & span{
     font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .img{
+    margin: 0;
+  }
+  .container1,
+  .container2{
+    width: 500px;
+  }
+  .desktopContainer{
+    display: flex;
+    width: 1000;
+    justify-content: space-around;
   }
 }
