@@ -21,7 +21,7 @@ const Nav = ({ language }) => {
             <li><Link href={'#Contact'}>Contacto</Link></li>
           </>}
           {language === 'en' && <>
-            <li><Link href='/' >Home</Link></li>
+            <li><Link href='/' className={`${pathname === '/' && styles.active}`} >Home</Link></li>
             <li><Link href='/events' className={`${pathname === '/events' && styles.active}`}>Events</Link></li>
             <li><Link href='/about' className={`${pathname === '/about' && styles.active}`}>About</Link></li>
             <li><Link href={'#Contact'}>Contact</Link></li>
@@ -29,7 +29,7 @@ const Nav = ({ language }) => {
 
         </ul>
       </nav>
-    </div>
+    </div >
   )
 }
 

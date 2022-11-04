@@ -67,8 +67,8 @@
 
 .soleImg{
   position: relative;
-  max-width: 650px;
-  max-width: 350px;
+  max-width: 450px;
+  width: 90%;
   height: auto;
   border-radius: 10px;
 }
@@ -106,7 +106,11 @@
   margin-left: -60.12px;
   bottom: 15px;
   z-index: 100;
-  &:hover{
+  a {
+    color: $yellow;
+    text-decoration: none;
+  }
+  :hover{
     cursor: pointer;
   }
 }
@@ -123,5 +127,54 @@
     &:hover{
       color: $yellow;
     }
+  }
+}
+
+@media screen and (min-width: 700px){
+  .title{
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .title{
+    font-size: 45px;
+    width: 600px;
+  }
+  .about{
+    padding-top: 80px;
+  }
+  .languageBtns, .burgerBtn{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .title{
+    margin: 0 0 30px 35px;
+    padding: 0;
+    text-align: start;
+  }
+  .soleText{
+    width: auto;
+    br{
+      display: none;
+    }
+  }
+  .text{
+    max-width: 700px;
+  }
+  .section{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .sole{
+    padding-top: 0;
   }
 }

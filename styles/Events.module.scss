@@ -40,6 +40,7 @@
   height: 10px;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
   background-color: $yellow;
 }
 
@@ -70,8 +71,10 @@
   }
 }
 
-.cardsContainer{
-
+.cardContainer1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card{
@@ -110,8 +113,39 @@
   font-weight: 700;
   padding: 7px;
   margin: 20px auto;
+  text-decoration: none;
 
-  &:hover{
-    cursor: pointer;
+}
+
+@media screen and (min-width: 700px){
+  .eventTitle{
+    width: auto;
+  }
+  .eventText{
+    max-width: 700px;
+  }
+  .card{
+    flex-direction: row;
+  }
+  .cardContainer1, .cardText{
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .languageBtns, .burgerBtn{
+    display: none;
+  }
+  .container{
+    padding-top: 70px;
+  }
+  .section{
+    padding-bottom: 50px;
+  }
+  .eventTitle{
+    font-size: 45px;
+  }
+  .separador{
+    margin: 50px auto 30px ;
   }
 }
