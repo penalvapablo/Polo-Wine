@@ -6,7 +6,7 @@ import img3 from '/public/travel-polo-and-wine.png'
 import styles from './EventosHome.module.scss'
 import Link from 'next/link'
 
-const EventosHome = ({ language }) => {
+const EventosHomeEs = ({ language }) => {
   return (
     <section className={styles.eventosHome}>
       <h2 className={styles.title}>
@@ -35,4 +35,4 @@ const EventosHome = ({ language }) => {
   )
 }
 
-export default EventosHome
+export default EventosHomeEs

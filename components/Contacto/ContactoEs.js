@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp, faInstagram, faFacebookF } from '@fortawesome/free-brands-svg-icons'
 
 
-const Contacto = () => {
+const ContactoEs = () => {
   return (
     <section id="Contact" className={styles.contacto}>
       <div className={styles.desktopContainer}>
@@ -26,9 +26,9 @@ const Contacto = () => {
           </div>
         </div>
       </div>
-      <p className={styles.copyright}><span>Polo & Wine.</span> Todos los derechos reservado 2022</p>
+      <p className={styles.copyright}><span>Polo & Wine.</span> Todos los derechos reservados 2022</p>
     </section>
   )
 }
 
-export default Contacto
+export default ContactoEs

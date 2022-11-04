@@ -2,10 +2,10 @@ import styles from './Confiar.module.scss'
 import { faTruckPlane, faArrowUpRightDots, faAddressBook, faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Confiar = () => {
+const ConfiarEs = () => {
   return (
     <section className={styles.confiar}>
-      <h2 className={styles.title}>¿Por qué confiar en Polo &Wine?</h2>
+      <h2 className={styles.title}>¿Por qué confiar en Polo & Wine?</h2>
       <div className={styles.container}>
         <div className={styles.item}>
           <FontAwesomeIcon icon={faTruckPlane} className={styles.itemIcon} />
@@ -32,4 +32,4 @@ const Confiar = () => {
   )
 }
 
-export default Confiar
+export default ConfiarEs

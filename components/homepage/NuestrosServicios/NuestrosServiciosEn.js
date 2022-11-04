@@ -9,42 +9,42 @@ import { faVanShuttle } from '@fortawesome/free-solid-svg-icons'
 import { faComments } from '@fortawesome/free-regular-svg-icons'
 import Link from 'next/link'
 
-const NuestrosServicios = () => {
+const NuestrosServiciosEn = () => {
   return (
     <section className={styles.nuestrosServicios}>
 
-      <h2 className={styles.title}>Nuestros Servicios</h2>
+      <h2 className={styles.title}>Our services</h2>
       <div className={styles.serviceContainer}>
         <div className={styles.service}>
           <FontAwesomeIcon icon={faSoccerBall} className={styles.icon} />
-          <p className={styles.text}>Asistencia a partidos y torneos profesionales</p>
+          <p className={styles.text}>Attendance at matches and professional tournaments</p>
         </div>
         <div className={styles.service}>
           <FontAwesomeIcon icon={faHorse} className={styles.icon} />
-          <p className={styles.text}>Vacaciones de polo con presencia de jugadores profesionales.</p>
+          <p className={styles.text}>Polo vacations with the presence of professional players</p>
         </div>
         <div className={styles.service}>
           <FontAwesomeIcon icon={faWineGlass} className={styles.icon} />
-          <p className={styles.text}>Organización de partidos de polo con cata de vinos</p>
+          <p className={styles.text}>Organization of polo matches with wine tasting</p>
         </div>
         <div className={styles.service}>
           <FontAwesomeIcon icon={faHotel} className={styles.icon} />
-          <p className={styles.text}>Reserva de hotelería nacional e internacional</p>
+          <p className={styles.text}>National and international hotel accommodation</p>
         </div>
         <div className={styles.service}>
           <FontAwesomeIcon icon={faVanShuttle} className={styles.icon} />
-          <p className={styles.text}>Recepciones y traslados con personal bilingüe</p>
+          <p className={styles.text}>Meet and Greet and transfers with bilingual staff</p>
         </div>
         <div className={styles.service}>
           <FontAwesomeIcon icon={faComments} className={styles.icon} />
-          <p className={styles.text}>Asistencia bilingue durante todo tu viaje</p>
+          <p className={styles.text}>Bilingual assistance throughout your trip</p>
         </div>
       </div>
 
-      <Link href='/events' className={styles.link}>Reservar mi próximo evento</Link>
+      <Link href='/events' className={styles.link}>Book my next event</Link>
 
     </section>
   )
 }
 
-export default NuestrosServicios
+export default NuestrosServiciosEn

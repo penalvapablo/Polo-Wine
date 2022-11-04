@@ -10,7 +10,7 @@
 }
 
 .navLinks{
-  width: 400px;
+  width: 500px;
   & ul{
     display: flex;
     height: 100%;
@@ -22,6 +22,7 @@
       border-radius: 10px;
       color: $yellow;
       text-decoration: none;
+      transition: all .3s;
       &:hover{
         background-color: $obispo;
       }
@@ -31,6 +32,25 @@
 }
 .active{
   background-color: $obispo;
+}
+
+.languageBtns{
+
+  display: flex;
+  margin-left: 20px;
+  & p{
+    font-size: 20px;
+    color: $yellow;
+  }
+}
+.languageBtn{
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: $yellow;
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 1000px){

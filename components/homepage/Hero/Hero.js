@@ -52,20 +52,20 @@ const Hero = ({ languageObj }) => {
           <p className={styles.text}>Combinamos tu pasión por el deporte, la música y el entretenimiento con los mejores destinos.</p>
           <p className={styles.text}>Disfruta de tu deporte o artista favorito <span>sin perderte los detalles turísticos de cada ciudad.</span></p>
         </div>
-        <button>
-          <Link href='/events' className={styles.btn}>Reservar mi próximo evento</Link>
-        </button>
+
+        <Link href='/events' className={styles.btn}>Reservar mi próximo evento</Link>
+
       </>
       }
       {language === 'en' && <>
         <div className={styles.textContainer}>
-          <h1 className={styles.title}>We are Polo & Wine</h1>
+          <h1 className={styles.title}>We are  Polo & Wine</h1>
           <p className={styles.text}>We combine your passion for sports, music and entertainment with the best destinations.</p>
           <p className={styles.text}>Enjoy your favourite sport or artist  <span>without missing out on the tourist details of each city.</span></p>
         </div>
-        <button >
-          <Link href='/events' className={styles.btnEn} >Book my next event</Link>
-        </button>
+
+        <Link href='/events' className={styles.btnEn} >Book my next event</Link>
+
       </>
       }
 

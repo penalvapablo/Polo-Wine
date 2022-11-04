@@ -1,6 +1,6 @@
 import styles from './Pilares.module.scss'
 
-const Pilares = ({ languages }) => {
+const PilaresEs = () => {
   return (
     <section className={styles.section}>
       <h2 className={styles.title}>Nuestros Pilares</h2>
@@ -22,4 +22,4 @@ const Pilares = ({ languages }) => {
   )
 }
 
-export default Pilares
+export default PilaresEs

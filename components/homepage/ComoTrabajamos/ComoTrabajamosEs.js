@@ -1,6 +1,6 @@
 import styles from './ComoTrabajamos.module.scss'
 
-const ComoTrabajamos = () => {
+const ComoTrabajamosEs = () => {
   return (
     <section id='ComoTrabajamos' className={styles.section}>
       <h2 className={styles.title}>Cómo trabajamos</h2>
@@ -13,4 +13,4 @@ const ComoTrabajamos = () => {
   )
 }
 
-export default ComoTrabajamos
+export default ComoTrabajamosEs
