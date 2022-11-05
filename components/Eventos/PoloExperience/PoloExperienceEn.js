@@ -12,31 +12,32 @@ const PoloExperienceEn = () => {
       <div className={styles.card}>
         <div className={styles.cardContainer1}>
           <h3 className={styles.cardTitle}>Polo Day</h3>
-          <p className={styles.cardText}>Polo Day is a program designed for all those who <span>want to be polo players for a day and learn the secrets of the most exclusive sport in Argentina.
+          <p className={styles.cardText}>Polo Day is a programme designed for all those who <span>want to be polo players for a day and learn the secrets of the most exclusive sport in Argentina.
           </span>
             <br />
-            Our proposal includes training, attendance at live polo matches, polo classes,
-            horseback riding through Estancia La Carona and tasting the best of local cuisine.
+            OOur proposal includes training, attending live polo matches, polo lessons, horseback riding and tasting the best of the local gastronomy.
+
 
             <br /><br />
             ● Hours: 9:00 a.m. to 5:00 p.m.
             <br />
-            ● Includes: Reception, classes, mini game, lunch and coffee.</p>
+            ● Includes: Reception, lessons, mini game, lunch and coffee.</p>
         </div>
 
-        <a href='https://wa.link/jdmx80' rel='noreferrer' target="_blank" className={styles.cardBtn}>Consult</a>
+        <a href='https://wa.link/jdmx80' rel='noreferrer' target="_blank" className={styles.cardBtn}>Get in Touch</a>
 
       </div>
       <div className={styles.card}>
         <div className={styles.cardContainer1}>
           <h3 className={styles.cardTitle}>Polo Holiday</h3>
-          <p className={styles.cardText}>The Polo Holiday is the ideal event for enthusiasts or professional players who <span>want to combine their holidays with polo programs lasting more than 1 day.</span> <br /> The proposal includes private lessons, attendance at matches, accommodation and tasting of the best traditional Argentine dishes.
+          <p className={styles.cardText}>The Polo Holiday is the ideal event for enthusiasts or professional players who <span> want to combine their holidays with polo programmes lasting more than 1 day.
+          </span> <br /> The proposal includes private lessons, match attendance, accommodation and tasting the best traditional Argentinean dishes.
             <br />
             ● Hours: 9:00 a.m. to 5:00 p.m.<br />
-            ● Includes: polo lessons, lodging, breakfast, lunch and dinner.
+            ● Includes: polo lessons, Chukkers, accommodation, breakfast, lunch and dinner.
           </p>
         </div>
-        <a href='https://wa.link/jdmx80' rel='noreferrer' target="_blank" className={styles.cardBtn}>Consult</a>
+        <a href='https://wa.link/jdmx80' rel='noreferrer' target="_blank" className={styles.cardBtn}>Get in Touch</a>
       </div>
 
 
@@ -45,15 +46,13 @@ const PoloExperienceEn = () => {
           <h3 className={styles.cardTitle}>Polo Night</h3>
           <p className={styles.cardText}>Polo Night is an event designed for those who <span>want to enjoy a memorable polo
             experience under the moonlight.</span> <br />
-            The proposal consists of witnessing a match in the only professional floodlit field in
-            the world, while tasting a typical Argentine &quot;picada&quot;,
-            accompanied by empanadas, gourmet roast beef sandwiches and an exclusive
+            The proposal consists of watching a match in the only professional field illuminated in the world while tasting a typical Argentinean &quot;picada&quot;, accompanied by empanadas, gourmet barbecue sandwiches and an exclusive
             national wine.<br /><br />
             ● Hours: 5:00 p.m. to 9:30 p.m.<br />
-            ● Includes: Reception, classes, game and dinner.
+            ● Includes: Reception, classes, match and dinner.
           </p>
         </div>
-        <a href='https://wa.link/jdmx80' rel='noreferrer' target="_blank" className={styles.cardBtn}>Consult</a>
+        <a href='https://wa.link/jdmx80' rel='noreferrer' target="_blank" className={styles.cardBtn}>Get in Touch</a>
       </div>
 
     </div>

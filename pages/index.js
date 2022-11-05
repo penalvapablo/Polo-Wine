@@ -35,8 +35,8 @@ export default function Home() {
   }
 
   if (language === 'en') {
-    title = 'Polo & Wine | Sports Tourism and Events Agency'
-    metadescription = ''
+    title = 'Polo & Wine | Sports Tourism and Events'
+    metadescription = 'Travel agency specialised in sports tourism and events. Sporting events and international concerts | Individual and group tailor-made trips.'
   }
 
 

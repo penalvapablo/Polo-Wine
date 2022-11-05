@@ -41,7 +41,7 @@ const Premier = () => {
           ● Services subject to availability at the time of booking<br />
           ● Consult for other services of this package
         </p>
-        <a href='https://wa.link/jdmx80' rel='noreferrer' target="_blank" className={styles.cardBtn}>Consult</a>
+        <a href='https://wa.link/jdmx80' rel='noreferrer' target="_blank" className={styles.cardBtn}>Get in Touch</a>
       </div>
     </div>
   )

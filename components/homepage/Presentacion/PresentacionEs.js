@@ -16,7 +16,7 @@ const PresentacionEs = () => {
       </div>
       <div className={styles.separador}></div>
       <div className={styles.mobileDiv2}>
-        <h1 className={`${styles.title1} ${styles.title2}`}>Hablamos tu mismo idioma</h1>
+        <h1 className={styles.title2}>Hablamos tu mismo idioma</h1>
         <p className={`${styles.text} ${styles.text2}`}>Nos encargamos del diseño y logística de tu viaje y para ello contamos con una gran red de contactos que incluye a clubes de polo, tour operadores, embajadas y agencias de viajes alrededor del mundo.<br /><br /> Nuestro equipo bilingüe se ocupa de cada detalle, para que al llegar a destino, ya tengas todos los servicios y puedas disfrutar de tus eventos sin complicaciones.</p>
 
       </div>

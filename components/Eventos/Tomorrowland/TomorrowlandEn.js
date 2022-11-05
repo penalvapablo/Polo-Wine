@@ -51,7 +51,7 @@ const TomorrowlandEn = () => {
           ● Consult for other services of this package
 
         </p>
-        <a href='https://wa.link/jdmx80' rel='noreferrer' target="_blank" className={styles.cardBtn}>Consultar</a>
+        <a href='https://wa.link/jdmx80' rel='noreferrer' target="_blank" className={styles.cardBtn}>Get in Touch</a>
       </div>
     </div>
   )
