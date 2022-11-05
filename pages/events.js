@@ -29,13 +29,13 @@ const Events = () => {
 
   let title, metadescription
   if (language === 'es') {
-    title = 'Polo & Wines | Agencia de Turismo Deportivo y Eventos'
+    title = 'Eventos | Polo & Wines | Agencia de Turismo Deportivo y Eventos'
     metadescription = 'Agencia de viajes especializada en turismo deportivo y eventos. Eventos Deportivos y conciertos internacionales | Viajes individuales y grupales a medida.'
   }
 
   if (language === 'en') {
-    title = ''
-    metadescription = ''
+    title = 'Events | Polo & Wine | Sports Tourism and Events '
+    metadescription = 'Travel agency specialised in sports tourism and events. Sporting events and international concerts | Individual and group tailor-made trips.'
   }
   return (
     <div className={styles.container}>

@@ -7,7 +7,7 @@ const PoloExperienceEn = () => {
       <p className={styles.eventText}>Polo & Wine invites you to enjoy a 100% Argentine experience that combines nature,
         gastronomy and the best of polo. <br /><br />Just 50 minutes from Buenos Aires, an unforgettable adventure awaits you in which <span> you will learn about the history of polo, attend matches in real time and enjoy a day in
           the countryside surrounded by first-class horses and expert riders</span><br /><br />Whether you want to take polo lessons, become a player for a day or enjoy a game
-        under the moonlight, we offer you a <span>selection of exclusive programs 365 days a year</span> <br /><br />We invite you to know our proposals.</p>
+        under the moonlight, we offer you a <span>selection of exclusive programmes 365 days a year</span> <br /><br />We invite you to know our proposals.</p>
 
       <div className={styles.card}>
         <div className={styles.cardContainer1}>
