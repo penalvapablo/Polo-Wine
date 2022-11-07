@@ -21,13 +21,14 @@ import NumerosEn from '../components/homepage/Numeros/NumerosEn'
 import ComoTrabajamosEs from '../components/homepage/ComoTrabajamos/ComoTrabajamosEs'
 import ComoTrabajamosEn from '../components/homepage/ComoTrabajamos/ComoTrabajamosEn'
 
-import Contacto from '../components/Contacto/ContactoEn'
+import ContactoEs from '../components/Contacto/ContactoEs'
+import ContactoEn from '../components/Contacto/ContactoEn'
 import Nav from '../components/Nav/Nav'
 
 export default function Home() {
   const value = useContext(AppContext);
   const { language } = value
-  console.log(value)
+
   let title, metadescription
   if (language === 'es') {
     title = 'Polo & Wine | Agencia de Turismo Deportivo y Eventos'
@@ -62,7 +63,7 @@ export default function Home() {
         <TestimoniosEs />
         <NumerosEs />
         <ComoTrabajamosEs />
-        <Contacto />
+        <ContactoEs />
       </>}
       {language === 'en' && <>
         <PresentacionEn />
@@ -75,7 +76,7 @@ export default function Home() {
         <TestimoniosEn />
         <NumerosEn />
         <ComoTrabajamosEn />
-        <Contacto />
+        <ContactoEn />
       </>}
 
     </div >

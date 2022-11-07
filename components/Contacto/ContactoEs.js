@@ -15,7 +15,7 @@ const ContactoEs = () => {
         </div>
         <div className={styles.container2}>
           <p className={styles.subTitle}>Teléfono</p>
-          <p className={styles.text}>+447397793899</p>
+          <a className={styles.text}>+447397793899</a>
           <p className={styles.subTitle}>Email</p>
           <p className={styles.text}>info@poloandwine.com</p>
           <p className={styles.subTitle}>Mis redes sociales</p>
