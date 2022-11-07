@@ -14,7 +14,7 @@ const ContactoEn = () => {
         </div>
         <div className={styles.container2}>
           <p className={styles.subTitle}>Phone Number</p>
-          <p className={styles.text} meta name="format-detection" content="telephone=no" d> +447397793899</p>
+          <p className={styles.text}> +447397793899</p>
           <p className={styles.subTitle}>Email</p>
           <p className={styles.text}>info@poloandwine.com</p>
           <p className={styles.subTitle}>My social networks</p>
