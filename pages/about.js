@@ -46,6 +46,7 @@ const About = () => {
       <Head>
         <title>{title}</title>
         <meta name="description" content={metadescription} />
+        <meta name="format-detection" content="telephone=no" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Nav languageObj={value} />
