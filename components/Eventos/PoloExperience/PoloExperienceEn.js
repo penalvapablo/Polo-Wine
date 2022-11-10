@@ -18,7 +18,7 @@ const PoloExperienceEn = () => {
           <p className={styles.cardText}>Polo Day is a programme designed for all those who <span>want to be polo players for a day and learn the secrets of the most exclusive sport in Argentina.
           </span>
             <br />
-            OOur proposal includes training, attending live polo matches, polo lessons, horseback riding and tasting the best of the local gastronomy.
+            Our proposal includes training, attending live polo matches, polo lessons, horseback riding and tasting the best of the local gastronomy.
 
 
             <br /><br />
