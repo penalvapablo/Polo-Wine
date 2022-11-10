@@ -29,13 +29,13 @@ const Events = () => {
 
   let title, metadescription
   if (language === 'es') {
-    title = 'Eventos | Polo & Wines | Agencia de Turismo Deportivo y Eventos'
-    metadescription = 'Agencia de viajes especializada en turismo deportivo y eventos. Eventos Deportivos y conciertos internacionales | Viajes individuales y grupales a medida.'
+    title = 'Los mejores eventos en Argentina y el mundo | POLO & WINE'
+    metadescription = 'Especialistas en Turismo Deportivo y de Eventos. Paquetes turísticos a conciertos, eventos deportivos, festivales, espectáculos teatrales y mucho más.'
   }
 
   if (language === 'en') {
-    title = 'Events | Polo & Wine | Sports Tourism and Events '
-    metadescription = 'Travel agency specialised in sports tourism and events. Sporting events and international concerts | Individual and group tailor-made trips.'
+    title = 'The best events in Argentina and the world | POLO & WINE'
+    metadescription = 'Specialists in Sports Tourism and Events. Tour packages to concerts, sporting events, festivals, theater shows and much more.'
   }
   return (
     <div className={styles.container}>
