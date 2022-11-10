@@ -1,9 +1,12 @@
+import Image from 'next/image'
 import styles from '/components/Eventos/Events.module.scss'
+import polo from '/public/Polo-&-Wine-event.JPG'
 
 const PoloExperienceEn = () => {
   return (
     <div className={styles.event}>
       <h2 className={styles.eventTitle}>POLO EXPERIENCE ARGENTINA</h2>
+      <Image src={polo} alt='Polo & Wine event' className={styles.img} />
       <p className={styles.eventText}>Polo & Wine invites you to enjoy a 100% Argentine experience that combines nature,
         gastronomy and the best of polo. <br /><br />Just 50 minutes from Buenos Aires, an unforgettable adventure awaits you in which <span> you will learn about the history of polo, attend matches in real time and enjoy a day in
           the countryside surrounded by first-class horses and expert riders</span><br /><br />Whether you want to take polo lessons, become a player for a day or enjoy a game

@@ -1,29 +1,32 @@
 @import '/styles/colors';
 
-.container{
+.container {
   background-color: $white;
   padding-top: 90px;
 }
 
-.languageBtns{
+.languageBtns {
   position: absolute;
   top: 30px;
   left: 30px;
   display: flex;
   z-index: 1001;
-  & p{
+
+  & p {
     font-size: 20px;
     color: $yellow;
   }
 }
-.languageBtn{
+
+.languageBtn {
   background-color: transparent;
   border: none;
   font-size: 20px;
   color: $yellow;
 
 }
-.burgerBtn{
+
+.burgerBtn {
   position: absolute;
   top: 20px;
   right: 40px;
@@ -31,12 +34,13 @@
   border: none;
   z-index: 1001;
 }
-.burger{
+
+.burger {
   height: 30px;
   color: $yellow;
 }
 
-.separador{
+.separador {
   height: 10px;
   width: 100%;
   max-width: 1200px;
@@ -44,12 +48,15 @@
   background-color: $yellow;
 }
 
-.event{
+.event {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
-.eventTitle{
+.eventTitle {
   font-family: TangoSans, sanserif;
   font-weight: 700;
   font-size: 30px;
@@ -61,23 +68,24 @@
   padding-bottom: 30px;
 }
 
-.eventText{
+.eventText {
   font-size: 18px;
   width: 90%;
   margin: 0 auto;
   color: $obispoTexto;
-  & span{
+
+  & span {
     font-weight: 800;
   }
 }
 
-.cardContainer1{
+.cardContainer1 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   border: 5px solid $obispoTexto;
@@ -89,22 +97,23 @@
   align-items: center;
 }
 
-.cardTitle{
+.cardTitle {
   font-size: 22px;
   font-weight: 600;
   margin: 10px 0 20px;
   color: $obispoTexto;
 }
 
-.cardText{
+.cardText {
   font-size: 18px;
   color: $obispoTexto;
-  & span{
+
+  & span {
     font-weight: 800;
   }
 }
 
-.cardBtn{
+.cardBtn {
   background-color: $obispo;
   color: $yellow;
   border: 2px solid $yellow;
@@ -114,38 +123,56 @@
   padding: 7px;
   margin: 20px auto;
   text-decoration: none;
-
 }
 
-@media screen and (min-width: 700px){
-  .eventTitle{
+.img {
+  position: relative;
+  max-width: 1200px;
+  width: 90%;
+  height: auto;
+  margin: 20px 0 50px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .eventTitle {
     width: auto;
   }
-  .eventText{
+
+  .eventText {
     max-width: 700px;
   }
-  .card{
+
+  .card {
     flex-direction: row;
   }
-  .cardContainer1, .cardText{
+
+  .cardContainer1,
+  .cardText {
     width: 400px;
   }
 }
 
-@media screen and (min-width: 1000px){
-  .languageBtns, .burgerBtn{
+@media screen and (min-width: 1000px) {
+
+  .languageBtns,
+  .burgerBtn {
     display: none;
   }
-  .container{
+
+  .container {
     padding-top: 70px;
   }
-  .section{
+
+  .section {
     padding-bottom: 50px;
   }
-  .eventTitle{
+
+  .eventTitle {
     font-size: 45px;
   }
-  .separador{
-    margin: 50px auto 30px ;
+
+  .separador {
+    margin: 50px auto 30px;
   }
 }
