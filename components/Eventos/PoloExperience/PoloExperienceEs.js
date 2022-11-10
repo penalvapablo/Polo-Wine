@@ -8,7 +8,7 @@ const PoloExperienceEs = () => {
       <h2 className={styles.eventTitle}>POLO EXPERIENCE ARGENTINA</h2>
       <video controls muted className={styles.video}>
         <source src={video} type="video/mp4" />
-      </video>;
+      </video>
       <p className={styles.eventText}>Polo & Wine te invita a disfrutar de una experiencia 100% argentina que combina naturaleza, gastronomía y lo mejor del polo. <br /><br />A tan solo 50 minutos de Buenos Aires, te espera una aventura inolvidable en la que <span> conocerás la historia del polo, asistirás a partidos en tiempo real y disfrutarás de un día de campo rodeado de caballos de primera categoría y jinetes expertos.</span><br /><br />Ya sea que quieras tomar lecciones de polo, convertirte en jugador por un día o disfrutar de un partido bajo la luz de la luna, te ofrecemos una<span>selección de programas exclusivos durante los 365 días del año.</span> <br /><br />Te invitamos a conocer nuestras propuestas.</p>
 
       <div className={styles.card}>
