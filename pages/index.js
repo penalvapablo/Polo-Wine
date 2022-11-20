@@ -47,6 +47,7 @@ export default function Home() {
     <div className={styles.container1}>
       <Head>
         <title>{title}</title>
+        <meta name="google-site-verification" content="UaSUKE7_aZwWN7sMTxwL1CWNkw4HIhiNrB6zHb07Mk4" />
         <meta name="description" content={metadescription} />
         <meta name="format-detection" content="telephone=no" />
         <link rel="icon" href="/favicon.png" />
