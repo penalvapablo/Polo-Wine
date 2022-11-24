@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
       </Script>
       <AppContext.Provider value={{ language, languageFnEs, languageFnEn }}>
         <Component {...pageProps} />
-      </AppContext.Provider >
+      </AppContext.Provider>
     </>
   )
 }
