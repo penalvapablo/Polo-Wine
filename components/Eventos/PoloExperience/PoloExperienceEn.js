@@ -7,7 +7,7 @@ const PoloExperienceEn = () => {
   return (
     <div className={styles.event}>
       <h2 className={styles.eventTitle}>POLO EXPERIENCE ARGENTINA</h2>
-      <video controls muted className={styles.video}>
+      <video controls muted autoPlay className={styles.video}>
         <source src={video} type="video/mp4" />
       </video>
       {/* <Image src={polo} alt='Polo & Wine event' className={styles.img} /> */}
