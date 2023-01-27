@@ -1,15 +1,12 @@
 // import Image from 'next/image'
 import styles from '/components/Eventos/Events.module.scss'
-import polo from '/public/Polo-&-Wine-event.JPG'
-import video from '/public/video.mp4'
+
 
 const PoloExperienceEn = () => {
   return (
     <div className={styles.event}>
       <h2 className={styles.eventTitle}>POLO EXPERIENCE ARGENTINA</h2>
-      {/* <video controls muted autoPlay className={styles.video}>
-        <source src={video} type="video/mp4" />
-      </video> */}
+
       <div className={styles.video_container}>
         <iframe className={styles.iframe} src="https://www.youtube.com/embed/78beRUhXVOA?&autoplay=1&mute=1" title="Easily test your site across all browsers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
