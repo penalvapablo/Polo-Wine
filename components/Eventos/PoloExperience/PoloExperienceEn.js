@@ -7,9 +7,12 @@ const PoloExperienceEn = () => {
   return (
     <div className={styles.event}>
       <h2 className={styles.eventTitle}>POLO EXPERIENCE ARGENTINA</h2>
-      <video controls muted autoPlay className={styles.video}>
+      {/* <video controls muted autoPlay className={styles.video}>
         <source src={video} type="video/mp4" />
-      </video>
+      </video> */}
+      <div className={styles.video_container}>
+        <iframe className={styles.iframe} src="https://www.youtube.com/embed/78beRUhXVOA?&autoplay=1&mute=1" title="Easily test your site across all browsers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      </div>
       {/* <Image src={polo} alt='Polo & Wine event' className={styles.img} /> */}
       <p className={styles.eventText}>Polo & Wine invites you to enjoy a 100% Argentine experience that combines nature,
         gastronomy and the best of polo. <br /><br />Just 50 minutes from Buenos Aires, an unforgettable adventure awaits you in which <span> you will learn about the history of polo, attend matches in real time and enjoy a day in

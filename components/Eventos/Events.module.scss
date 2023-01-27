@@ -134,11 +134,16 @@
   border-radius: 5px;
 }
 
-.video {
-  max-width: 1200px;
+.video_container {
   width: 90%;
-  height: auto;
-  margin: 20px 0 50px;
+  max-width: 1000px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 @media screen and (min-width: 700px) {
