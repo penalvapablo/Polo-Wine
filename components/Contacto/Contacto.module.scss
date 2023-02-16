@@ -1,28 +1,30 @@
 @import '/styles/colors';
 
-.contacto{
+.contacto {
   background-color: $darkGray;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 40px;
 }
-.container1{
+
+.container1 {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: auto;
-  
+
 }
-.img{
+
+.img {
   width: 90%;
   max-width: 500px;
   height: auto;
   margin-bottom: 50px;
 }
 
-.title{  
+.title {
   font-family: TangoSans, sanserif;
   font-weight: 700;
   font-size: 30px;
@@ -34,7 +36,7 @@
   padding-bottom: 30px;
 }
 
-.subTitle{
+.subTitle {
   font-weight: 500;
   font-size: 24px;
   width: 90%;
@@ -44,7 +46,7 @@
   padding-bottom: 10px;
 }
 
-.text{
+.text {
   font-size: 18px;
   color: $yellow;
   padding-bottom: 30px;
@@ -53,20 +55,22 @@
 }
 
 .text[href^=tel] {
-  text-decoration:inherit;
+  text-decoration: inherit;
   color: pink;
 }
 
-.SocialLinksBox{
+.SocialLinksBox {
   width: 180px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto 0;
   font-size: 50px;
+
   & a {
     color: $yellow;
     transition: all .3s;
-    &:hover{
+
+    &:hover {
       color: rgb(180, 76, 177);
     }
 
@@ -74,32 +78,35 @@
 }
 
 
-.icon{
+.icon {
   height: 50px;
   color: $yellow;
 }
 
-.copyright{
+.copyright {
   font-size: 12px;
   margin-top: 30px;
-  color: $yellow;
-  & span{
+  color: #FFDF61;
+
+  & span {
     font-weight: 700;
   }
 }
 
-@media screen and (min-width: 1000px){
-  .img{
+@media screen and (min-width: 1000px) {
+  .img {
     margin: 0;
   }
+
   .container1,
-  .container2{
+  .container2 {
     width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .desktopContainer{
+
+  .desktopContainer {
     display: flex;
     width: 1000;
     justify-content: space-around;

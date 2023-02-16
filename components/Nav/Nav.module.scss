@@ -1,62 +1,69 @@
 @import '/styles/colors';
 
-.nav{
+.nav {
   display: none;
 }
 
-.logo{
+.logo {
   width: auto;
   height: 100%;
 }
 
-.navLinks{
+.navLinks {
   width: 500px;
-  & ul{
+
+  & ul {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    & li a{
+
+    & li a {
       font-size: 20px;
       padding: 5px;
       border-radius: 10px;
       color: $yellow;
       text-decoration: none;
       transition: all .3s;
-      &:hover{
+
+      &:hover {
         background-color: $obispo;
       }
-      
+
     }
   }
 }
-.active{
+
+.active {
   background-color: $obispo;
 }
 
-.languageBtns{
+.languageBtns {
 
   display: flex;
   margin-left: 20px;
-  & p{
+
+  & p {
     font-size: 20px;
     color: $yellow;
   }
 }
-.languageBtn{
+
+.languageBtn {
   background-color: transparent;
   border: none;
   font-size: 20px;
   color: $yellow;
-  &:hover{
+
+  &:hover {
     cursor: pointer;
   }
 }
 
-@media screen and (min-width: 1000px){
-  .nav{
+@media screen and (min-width: 1000px) {
+  .nav {
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 100;
     left: 0;
     right: 0;
