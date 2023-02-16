@@ -28,18 +28,18 @@ const NavEs = () => {
           </li>
           <li>
             <Link
-              href="/events"
+              href="/es/eventos"
               className={`${
-                pathname === '/events' && styles.active
+                pathname === '/es/eventos' && styles.active
               }`}>
               Eventos
             </Link>
           </li>
           <li>
             <Link
-              href="/about"
+              href="/es/about"
               className={`${
-                pathname === '/about' && styles.active
+                pathname === '/es/about' && styles.active
               }`}>
               Quien soy
             </Link>
