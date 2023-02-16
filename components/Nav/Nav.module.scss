@@ -39,7 +39,6 @@
 }
 
 .languageBtns {
-
   display: flex;
   margin-left: 20px;
 
@@ -54,6 +53,8 @@
   border: none;
   font-size: 20px;
   color: $yellow;
+  text-decoration: none;
+  padding: 1px 6px;
 
   &:hover {
     cursor: pointer;
