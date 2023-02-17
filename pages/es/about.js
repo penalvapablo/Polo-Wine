@@ -1,21 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head';
 import { useState } from 'react';
-import styles from '../components/About/About.module.scss';
+import styles from '../../components/About/About.module.scss';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import MobileNav from '/components/MobileNav/MobileNav';
-import { useContext } from 'react';
-import AppContext from '../components/AppContext';
-
-import ContactoEs from '../components/Contacto/ContactoEs';
-import Nav from '../components/Nav/Nav';
-import AboutEs from '../components/About/AboutEs';
-import AboutEn from '../components/About/AboutEn';
-
-import ContactoEn from '../components/Contacto/ContactoEn';
-import NavEn from '../components/Nav/NavEn';
-import LanguageBtns from '../components/LanguageBtns/LanguageBtns';
-import MobileNavEn from '../components/MobileNav/MobileNavEn';
+import ContactoEs from '../../components/Contacto/ContactoEs';
+import AboutEs from '../../components/About/AboutEs';
+import LanguageBtns from '../../components/LanguageBtns/LanguageBtns';
+import MobileNavEs from '../../components/MobileNav/MobileNavEs';
+import NavEs from '../../components/Nav/NavEs';
 
 const About = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -33,12 +25,12 @@ const About = () => {
     <div className={styles.about}>
       <Head>
         <title>
-          Soledad Salto | Specialist in Sports Tourism and
-          Events
+          Soledad Salto | Especialista en Turismo Deportivo
+          y Eventos
         </title>
         <meta
           name="description"
-          content="Expert in polo tournaments. I take you to the best sporting events and recitals in the world and turn your trip into a unique and unforgettable experience."
+          content="Experta en torneos de polo. Te llevo a los mejores eventos deportivos y recitales del mundo y convierto tu viaje en una experiencia única e inolvidable."
         />
         <meta
           name="format-detection"
@@ -49,11 +41,11 @@ const About = () => {
           href="/favicon.png"
         />
       </Head>
-      <NavEn />
+      <NavEs />
       <LanguageBtns />
 
       <div className={`${styles.mobileNav__container}`}>
-        <MobileNavEn
+        <MobileNavEs
           parent="about"
           mobileNavFn={mobileNavFn}
           mobileNavState={mobileNav}
@@ -69,8 +61,8 @@ const About = () => {
         />
       </button>
 
-      <AboutEn />
-      <ContactoEn />
+      <AboutEs />
+      <ContactoEs />
     </div>
   );
 };

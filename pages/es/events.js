@@ -1,23 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head';
 import { useState } from 'react';
-import styles from '../components/About/About.module.scss';
+import styles from '/components/Eventos/Events.module.scss';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import MobileNav from '/components/MobileNav/MobileNav';
-import { useContext } from 'react';
-import AppContext from '../components/AppContext';
+import ContactoEs from '../../components/Contacto/ContactoEs';
+import EventsEs from '../../components/Eventos/EventsEs';
+import NavEs from '../../components/Nav/NavEs';
+import MobileNavEs from '../../components/MobileNav/MobileNavEs';
 
-import ContactoEs from '../components/Contacto/ContactoEs';
-import Nav from '../components/Nav/Nav';
-import AboutEs from '../components/About/AboutEs';
-import AboutEn from '../components/About/AboutEn';
-
-import ContactoEn from '../components/Contacto/ContactoEn';
-import NavEn from '../components/Nav/NavEn';
-import LanguageBtns from '../components/LanguageBtns/LanguageBtns';
-import MobileNavEn from '../components/MobileNav/MobileNavEn';
-
-const About = () => {
+const Events = () => {
   const [mobileNav, setMobileNav] = useState(false);
   const mobileNavFn = () => {
     setMobileNav(!mobileNav);
@@ -30,15 +21,15 @@ const About = () => {
   }
 
   return (
-    <div className={styles.about}>
+    <div className={styles.container}>
       <Head>
         <title>
-          Soledad Salto | Specialist in Sports Tourism and
-          Events
+          Los mejores eventos en Argentina y el mundo | POLO
+          & WINE
         </title>
         <meta
           name="description"
-          content="Expert in polo tournaments. I take you to the best sporting events and recitals in the world and turn your trip into a unique and unforgettable experience."
+          content="Especialistas en Turismo Deportivo y de Eventos. Paquetes turísticos a conciertos, eventos deportivos, festivales, espectáculos teatrales y mucho más."
         />
         <meta
           name="format-detection"
@@ -49,12 +40,16 @@ const About = () => {
           href="/favicon.png"
         />
       </Head>
-      <NavEn />
-      <LanguageBtns />
+      <NavEs />
 
       <div className={`${styles.mobileNav__container}`}>
-        <MobileNavEn
-          parent="about"
+        {/* <MobileNav
+          parent="events"
+          mobileNavFn={mobileNavFn}
+          mobileNavState={mobileNav}
+        /> */}
+        <MobileNavEs
+          parent="events"
           mobileNavFn={mobileNavFn}
           mobileNavState={mobileNav}
         />
@@ -69,10 +64,10 @@ const About = () => {
         />
       </button>
 
-      <AboutEn />
-      <ContactoEn />
+      <EventsEs />
+      <ContactoEs />
     </div>
   );
 };
 
-export default About;
+export default Events;

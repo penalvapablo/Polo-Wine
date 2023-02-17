@@ -1,9 +1,5 @@
 import Head from 'next/head';
 import styles from '../../styles/Home.module.css';
-// import { useContext } from "react";
-// import AppContext from '/components/AppContext'
-
-import Hero from '/components/homepage/Hero/Hero';
 import PresentacionEs from '/components/homepage/Presentacion/PresentacionEs';
 import EventosHomeEs from '/components/homepage/EventosHome/EventosHomeEs';
 import NuestrosServiciosEs from '/components/homepage/NuestrosServicios/NuestrosServiciosEs';
@@ -12,26 +8,11 @@ import PilaresEs from '/components/homepage/Pilares/PilaresEs';
 import TestimoniosEs from '/components/homepage/Testimonios/TestimoniosEs';
 import NumerosEs from '/components/homepage/Numeros/NumerosEs';
 import ComoTrabajamosEs from '/components/homepage/ComoTrabajamos/ComoTrabajamosEs';
-
 import ContactoEs from '/components/Contacto/ContactoEs';
-import Nav from '/components/Nav/Nav';
 import NavEs from '../../components/Nav/NavEs';
+import HeroEs from '../../components/homepage/Hero/HeroEs';
 
 export default function Home() {
-  // const value = useContext(AppContext);
-  // const { language } = value
-
-  // let title, metadescription
-  // if (language === 'es') {
-  //   title = 'Polo & Wine | Agencia de Turismo Deportivo y Eventos'
-  //   metadescription = 'Agencia de viajes especializada en turismo deportivo y eventos. Eventos Deportivos y conciertos internacionales | Viajes individuales y grupales a medida.'
-  // }
-
-  // if (language === 'en') {
-  //   title = 'Polo & Wine | Sports Tourism and Events'
-  //   metadescription = 'Travel agency specialised in sports tourism and events. Sporting events and international concerts | Individual and group tailor-made trips.'
-  // }
-
   return (
     <div className={styles.container1}>
       <Head>
@@ -59,9 +40,8 @@ export default function Home() {
           href="/favicon.png"
         />
       </Head>
-      {/* <Nav languageObj={'es'} /> */}
       <NavEs />
-      <Hero languageObj={'es'} />
+      <HeroEs />
       <PresentacionEs />
       <EventosHomeEs />
       <NuestrosServiciosEs />

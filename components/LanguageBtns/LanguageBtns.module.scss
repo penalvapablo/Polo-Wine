@@ -1,0 +1,36 @@
+@import '/styles/colors';
+
+
+.languageBtns {
+  position: absolute;
+  z-index: 10000;
+  top: 30px;
+  left: 20px;
+
+  display: flex;
+  margin-left: 20px;
+
+  & p {
+    font-size: 20px;
+    color: $yellow;
+  }
+}
+
+.languageBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: $yellow;
+  text-decoration: none;
+  padding: 1px 6px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .languageBtns {
+    position: initial;
+  }
+}
