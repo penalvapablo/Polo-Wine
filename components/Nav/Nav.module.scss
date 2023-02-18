@@ -2,6 +2,7 @@
 
 .nav {
   display: none;
+  position: relative;
 }
 
 .logo {
@@ -15,6 +16,7 @@
   & ul {
     display: flex;
     height: 100%;
+    width: 70%;
     align-items: center;
     justify-content: space-between;
 
@@ -38,33 +40,18 @@
   background-color: $obispo;
 }
 
-.languageBtns {
-
+.NavAndLanguageBtnsContainer {
   display: flex;
-  margin-left: 20px;
-
-  & p {
-    font-size: 20px;
-    color: $yellow;
-  }
-}
-
-.languageBtn {
-  background-color: transparent;
-  border: none;
-  font-size: 20px;
-  color: $yellow;
-
-  &:hover {
-    cursor: pointer;
-  }
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 1000px) {
   .nav {
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 102;
     left: 0;
     right: 0;
     background-color: black;
