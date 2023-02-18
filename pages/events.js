@@ -7,6 +7,7 @@ import ContactoEn from '../components/Contacto/ContactoEn';
 import EventsEn from '../components/Eventos/EventsEn';
 import MobileNavEn from '../components/MobileNav/MobileNavEn';
 import NavEn from '../components/Nav/NavEn';
+import LanguageBtns from '../components/LanguageBtns/LanguageBtns';
 
 const Events = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -41,9 +42,8 @@ const Events = () => {
         />
       </Head>
       <NavEn />
-
+      <LanguageBtns />
       <div className={`${styles.mobileNav__container}`}>
-        {/* <MobileNav parent='events' mobileNavFn={mobileNavFn} mobileNavState={mobileNav} language={language} /> */}
         <MobileNavEn
           parent="events"
           mobileNavFn={mobileNavFn}

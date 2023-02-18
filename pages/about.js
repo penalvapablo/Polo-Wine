@@ -3,13 +3,7 @@ import Head from 'next/head';
 import { useState } from 'react';
 import styles from '../components/About/About.module.scss';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import MobileNav from '/components/MobileNav/MobileNav';
-import { useContext } from 'react';
-import AppContext from '../components/AppContext';
 
-import ContactoEs from '../components/Contacto/ContactoEs';
-import Nav from '../components/Nav/Nav';
-import AboutEs from '../components/About/AboutEs';
 import AboutEn from '../components/About/AboutEn';
 
 import ContactoEn from '../components/Contacto/ContactoEn';
