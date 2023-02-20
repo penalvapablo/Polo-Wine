@@ -123,6 +123,7 @@ body {
   src: url('../fonts/TangoSans.ttf');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 h1,
@@ -164,13 +165,6 @@ table {
   border-spacing: 0;
 }
 
-
-@font-face {
-  font-family: "TangoSans";
-  src: url('../fonts/TangoSans.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
 
 html {
   scroll-behavior: smooth;
