@@ -40,15 +40,15 @@ const HeroEn = () => {
 
       {/* BACKGROUND IMAGES */}
       <div className={styles.bg_image_container}>
-        {/* <Image
+        <Image
           src={mobile_bg}
           alt="Image-Polo-&-Wine"
           layout="fill"
-          priority
-          // loading="lazy"
+          // priority
+          loading="lazy"
           quality={100}
           className="tw-absolute tw-top-[-100px] lg:tw-hidden"
-        /> */}
+        />
         <Image
           src={desktop_bg}
           alt="Image-Polo-&-Wine"
@@ -56,7 +56,7 @@ const HeroEn = () => {
           priority
           // loading="lazy"
           quality={100}
-          className="tw-absolute tw-top-[-100px] lg:tw-top-[-150px]"
+          className="tw-hidden lg:tw-block tw-absolute lg:tw-top-[-150px]"
         />
       </div>
 

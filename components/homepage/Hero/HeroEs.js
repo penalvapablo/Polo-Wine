@@ -5,7 +5,6 @@ import Image from 'next/image';
 import bg from '/public/polo-and-wine-bg-desktop.JPG';
 import mobile_bg from '/public/polo-and-wine-bg-mobile.webp';
 import desktop_bg from '/public/polo-and-wine-bg-desktop.webp';
-
 import logo from '/public/logo-polo-and-wine.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -40,15 +39,15 @@ const HeroEs = () => {
 
       {/* BACKGROUND IMAGES */}
       <div className={styles.bg_image_container}>
-        {/* <Image
+        <Image
           src={mobile_bg}
           alt="Image-Polo-&-Wine"
           layout="fill"
-          priority
-          // loading="lazy"
+          // priority
+          loading="lazy"
           quality={100}
           className="tw-absolute tw-top-[-100px] lg:tw-hidden"
-        /> */}
+        />
         <Image
           src={desktop_bg}
           alt="Image-Polo-&-Wine"
@@ -56,7 +55,7 @@ const HeroEs = () => {
           priority
           // loading="lazy"
           quality={100}
-          className="tw-absolute tw-top-[-100px] lg:tw-top-[-150px]"
+          className="tw-hidden lg:tw-block tw-absolute lg:tw-top-[-150px]"
         />
       </div>
 
