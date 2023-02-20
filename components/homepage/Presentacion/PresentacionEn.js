@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import img from '/public/polo-and-wine.jpg';
+import img from '/public/presentacion.webp';
 import styles from './Presentacion.module.scss';
 
 const PresentacionEn = () => {

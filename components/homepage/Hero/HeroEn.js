@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import styles from './Hero.module.scss';
 import Image from 'next/image';
+
 import bg from '/public/polo-and-wine-bg-desktop.JPG';
+import mobile_bg from '/public/polo-and-wine-bg-mobile.webp';
+import desktop_bg from '/public/polo-and-wine-bg-desktop.webp';
+
 import logo from '/public/logo-polo-and-wine.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -36,13 +40,23 @@ const HeroEn = () => {
 
       {/* BACKGROUND IMAGES */}
       <div className={styles.bg_image_container}>
-        <Image
-          src={bg}
+        {/* <Image
+          src={mobile_bg}
           alt="Image-Polo-&-Wine"
           layout="fill"
           priority
+          // loading="lazy"
           quality={100}
-          className={styles.bg_image}
+          className="tw-absolute tw-top-[-100px] lg:tw-hidden"
+        /> */}
+        <Image
+          src={desktop_bg}
+          alt="Image-Polo-&-Wine"
+          layout="fill"
+          priority
+          // loading="lazy"
+          quality={100}
+          className="tw-absolute tw-top-[-100px] lg:tw-top-[-150px]"
         />
       </div>
 
@@ -50,7 +64,9 @@ const HeroEn = () => {
 
       <button
         className={styles.burgerBtn}
-        onClick={mobileNavFn}>
+        onClick={mobileNavFn}
+        id="Menu"
+        aria-label="Menu">
         <FontAwesomeIcon
           icon={faBars}
           className={styles.burger}
