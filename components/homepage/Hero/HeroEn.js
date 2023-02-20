@@ -53,8 +53,8 @@ const HeroEn = () => {
           src={desktop_bg}
           alt="Image-Polo-&-Wine"
           layout="fill"
-          priority
-          // loading="lazy"
+          // priority
+          loading="lazy"
           quality={100}
           className="tw-hidden lg:tw-block tw-absolute lg:tw-top-[-150px]"
         />
